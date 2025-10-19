@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:background="@android:color/white"
+    android:layout_marginBottom="8dp"
+    android:elevation="2dp">
+
+    <TextView
+        android:id="@+id/tvExerciseName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Egzersiz Adı"
+        android:textStyle="bold"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:id="@+id/tvExerciseKg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="KG: 50" />
+
+    <TextView
+        android:id="@+id/tvExerciseSets"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Setler: 12, 10, 8, 6" />
+</LinearLayout>

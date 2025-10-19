@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:padding="12dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView android:id="@+id/tvDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tarih"
+            android:textColor="#1C4E80"
+            android:textStyle="bold"
+            android:textSize="16sp" />
+
+        <TextView android:id="@+id/tvKilogram"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#1C4E80"
+            android:text="Kilo: " />
+
+        <TextView android:id="@+id/tvArm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#1C4E80"
+            android:text="Kol: " />
+
+        <TextView android:id="@+id/tvWaist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#1C4E80"
+            android:text="Bel: " />
+
+        <TextView android:id="@+id/tvLeg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#1C4E80"
+            android:text="Bacak: " />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

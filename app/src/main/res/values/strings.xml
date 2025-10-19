@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">MyToDoList</string>
+    <string-array name="activity_levels">
+        <item>Hareketsiz</item>
+        <item>Hafif Aktif</item>
+        <item>Orta Aktif</item>
+        <item>Çok Aktif</item>
+        <item>Aşırı Aktif</item>
+    </string-array>
+</resources>

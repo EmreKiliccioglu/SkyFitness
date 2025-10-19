@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.skyfitness">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/pngegg"
+        android:label="SkyFitness"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MyToDoList"
+        tools:targetApi="31">
+        <activity
+            android:name="com.example.skyfitness.CreatePlan"
+            android:exported="false" />
+        <activity
+            android:name="com.example.skyfitness.AthleteDetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.skyfitness.Messages"
+            android:exported="false" />
+        <activity
+            android:name="com.example.skyfitness.Coach"
+            android:exported="false" />
+        <activity
+            android:name="com.example.skyfitness.Yag"
+            android:exported="false" />
+        <activity
+            android:name="com.example.skyfitness.Karbonhidrat"
+            android:exported="false" />
+        <activity
+            android:name="com.example.skyfitness.Protein"
+            android:exported="false" />
+        <activity
+            android:name="com.example.skyfitness.Egzersiz"
+            android:exported="false" />
+        <activity
+            android:name="com.example.skyfitness.GirisSeviye"
+            android:exported="false" />
+        <activity
+            android:name="com.example.skyfitness.WorkoutPagerAdapter"
+            android:exported="false"
+            tools:ignore="Instantiatable" />
+        <activity
+            android:name="com.example.skyfitness.Info"
+            android:exported="false" />
+        <activity
+            android:name="com.example.skyfitness.Diet"
+            android:exported="false" />
+        <activity
+            android:name="com.example.skyfitness.Measure"
+            android:exported="false" />
+        <activity
+            android:name="com.example.skyfitness.Workout"
+            android:exported="false" />
+        <activity
+            android:name="com.example.skyfitness.User"
+            android:exported="false" />
+        <activity
+            android:name="com.example.skyfitness.Register"
+            android:exported="false" />
+        <activity
+            android:name="com.example.skyfitness.Login"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.skyfitness.MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

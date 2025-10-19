@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1C4E80">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:gravity="center_horizontal">
+
+        <!-- Fitness İkonu -->
+        <ImageView
+            android:id="@+id/ivDumbbell"
+            android:layout_width="127dp"
+            android:layout_height="202dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="24dp"
+            android:src="@drawable/pngegg" />
+
+        <!-- Başlık -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SkyFitness"
+            android:textSize="28sp"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:layout_marginBottom="32dp" />
+
+        <!-- Email -->
+        <EditText
+            android:id="@+id/etEmail"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Email"
+            android:background="#ECECEC"
+            android:inputType="textEmailAddress"
+            android:padding="10dp"
+            android:textColor="#222222"
+            android:textColorHint="#666666"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Şifre -->
+        <EditText
+            android:id="@+id/etPassword"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Şifre"
+            android:background="#ECECEC"
+            android:inputType="textPassword"
+            android:padding="10dp"
+            android:textColor="#222222"
+            android:textColorHint="#666666"
+            android:layout_marginBottom="24dp" />
+
+
+
+        <!-- Giriş Butonu -->
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Giriş Yap"
+            android:background="#4B4B4B"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Kayıt Butonu -->
+        <Button
+            android:id="@+id/btnRegister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Kayıt Ol"
+            android:background="#4B4B4B"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="16dp"/>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Scrollable content -->
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:padding="16dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/bottom_nav"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/edtCurrentWeight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Mevcut Kilo (kg)"
+                android:inputType="numberDecimal"
+                android:minHeight="48dp"
+                android:padding="12dp" />
+
+            <EditText
+                android:id="@+id/edtTargetWeight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Hedef Kilo (kg)"
+                android:inputType="numberDecimal"
+                android:layout_marginTop="8dp"
+                android:minHeight="48dp"
+                android:padding="12dp" />
+
+            <EditText
+                android:id="@+id/edtHeight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Boy (cm)"
+                android:inputType="number"
+                android:minHeight="48dp"
+                android:padding="12dp" />
+
+            <EditText
+                android:id="@+id/edtAge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Yaş"
+                android:inputType="number"
+                android:layout_marginTop="8dp"
+                android:minHeight="48dp"
+                android:padding="12dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cinsiyet"
+                android:textStyle="bold"
+                android:layout_marginTop="8dp" />
+
+            <RadioGroup
+                android:id="@+id/rgGender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rbMale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Erkek"
+                    android:checked="true" />
+
+                <RadioButton
+                    android:id="@+id/rbFemale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Kadın"
+                    android:layout_marginStart="24dp" />
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Aktivite Seviyesi"
+                android:textStyle="bold"
+                android:layout_marginTop="8dp" />
+
+            <Spinner
+                android:id="@+id/spinnerActivityLevel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="48dp"
+                android:padding="12dp"
+                android:contentDescription="Aktivite Seviyesi Seçimi" />
+
+            <EditText
+                android:id="@+id/edtGoalDuration"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Hedef Süresi (ay)"
+                android:inputType="number"
+                android:layout_marginTop="8dp"
+                android:minHeight="48dp"
+                android:padding="12dp" />
+
+            <Button
+                android:id="@+id/btnCalculate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Hesapla"
+                android:layout_marginTop="16dp" />
+
+            <TextView
+                android:id="@+id/txtResultCalories"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Toplam Kalori: "
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginTop="24dp" />
+
+            <TextView
+                android:id="@+id/txtProtein"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Protein: "
+                android:textSize="16sp"
+                android:layout_marginTop="8dp" />
+
+            <TextView
+                android:id="@+id/txtCarbs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Karbonhidrat: "
+                android:textSize="16sp"
+                android:layout_marginTop="4dp" />
+
+            <TextView
+                android:id="@+id/txtFat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Yağ: "
+                android:textSize="16sp"
+                android:layout_marginTop="4dp" />
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Sabit alt menü -->
+    <include
+        android:id="@+id/bottom_nav"
+        layout="@layout/bottom_nov"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
